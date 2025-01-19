@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="computer-desk" src="/Computer Desk.glb"></a-asset-item>
+            <a-asset-item id="OBJmtl" src="/Chair_Happy_SI_0374/Chair_Happy_SI_0374.mtl"></a-asset-item>
+            <a-asset-item id="OBJschool" src="/Chair_Happy_SI_0374/Chair_Happy_SI_0374.obj"></a-asset-item>    
+        </a-assets>
+
+        <a-entity text="value: Computer Desk by Zsky [CC-BY] via Poly Pizza"></a-entity>
+
+        <a-entity gltf-model="#computer-desk" position="1 1 1"></a-entity>
+        <a-entity obj-model="obj: url(/Chair_Happy_SI_0374/Chair_Happy_SI_0374.obj); mtl: url(/Chair_Happy_SI_0374/Chair_Happy_SI_0374.mtl)"></a-entity>
+
+        
+        
+    </a-scene>
+    
+
+</body>
+</html>
