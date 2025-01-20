@@ -9,14 +9,16 @@
 <body>
     <a-scene>
         <a-assets>
-            <a-asset-item id="computer-desk" src="/models/Computer Desk.glb"></a-asset-item>
+            <a-asset-item id="computer-desk" src="/models/school-desk.glb"></a-asset-item>
             <a-asset-item id="school-chair" src="/models/schoolChair.glb"></a-asset-item> 
         </a-assets>
 
-        <a-entity text="value: Computer Desk by Zsky [CC-BY] via Poly Pizza"></a-entity>
+        <a-box metalness="0" side="double" color="gray" depth="15" width="15" height="15" position="1 7.5 1"></a-box>
+        <!-- <a-entity text="value: Computer Desk by Zsky [CC-BY] via Poly Pizza"></a-entity> -->
 
-        <a-entity gltf-model="#computer-desk" position="1 1 1"></a-entity>
-        <a-entity gltf-model="#school-chair" scale="0.05 0.05 0.05" position="1 2 1"></a-entity>
+        <a-entity gltf-model="#computer-desk" position="1 0 1" scale="0.015 0.015 0.015"></a-entity>
+        <a-entity gltf-model="#school-chair" scale="0.035 0.035 0.035" rotation="0 90 0" position="0.5 0 1.5"></a-entity>
+        <a-entity gltf-model="#school-chair" scale="0.035 0.035 0.035" rotation="0 90 0" position="1.5 0 1.5"></a-entity>
 
         
         
